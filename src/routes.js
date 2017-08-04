@@ -5,11 +5,13 @@ import { history } from 'store/index';
 import Layout from 'containers/layout';
 import App from 'containers/app';
 
+
 const routes = (
   <ConnectedRouter history={history}>
     <Layout>
       <Switch>
-        <Route exact path="/" component={App} />
+          <Route path="/" component={App}/>
+          <Route path="/sources" component={}/>
       </Switch>
     </Layout>
   </ConnectedRouter>

@@ -1,9 +1,22 @@
-import { APP_LOAD } from 'constants/action-types';
+import all from 'constants/action-types';
 
 export function loadApp() {
-  return {
-    type: APP_LOAD,
-  };
+    return {
+        type: action - types.APP_LOAD,
+
+    };
 }
 
-export default { loadApp };
+export function loadMappings() {
+    return {
+        type: action - types.MAPPINGS_LOAD,
+
+    };
+}
+
+export function loadSources() {
+    return {
+        type: action - types.SOURCES_LOAD,
+
+    };
+}

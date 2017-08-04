@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { loadApp } from 'actions/app';
 import styles from './app.css';
+import Menu from './menu';
+import Main from './main';
 
 type Props = {
-  dispatch: () => void,
-  loaded: boolean
+    dispatch: () => void,
+    loaded: boolean
 }
 
 export class AppContainer extends Component {
@@ -21,7 +23,10 @@ export class AppContainer extends Component {
     }
 
     return (
-      <div className={styles.container} />
+        <div className={styles.container}>
+            <Menu/>
+            <this.props.component/>
+        </div>
     );
   }
 }

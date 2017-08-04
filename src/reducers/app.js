@@ -6,8 +6,9 @@ const initialState = {
 
 export default function app(state = initialState, action) {
   switch (action.type) {
-    case APP_LOAD:
-      return { ...state, loaded: true };
+      case APP_LOAD:
+          state.text = "loaded";
+          return {...state, loaded: true};
     default:
       return state;
   }

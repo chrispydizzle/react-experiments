@@ -51,6 +51,7 @@
     "webpack-dev-server": "2.4.5"
   },
   "dependencies": {
+    "@types/react": "^16.0.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
@@ -74,6 +75,7 @@
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.2",
     "redux": "^3.6.0",
     "style-loader": "^0.18.0",
     "webpack": "2.6.0"
